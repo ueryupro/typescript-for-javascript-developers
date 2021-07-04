@@ -33,4 +33,3 @@ let ryuji = new Android("Taro", 30, "Japan");　//インスタンス　
 console.log(taro.profile());
 console.log(ryuji.profile());
 console.log(taro.name);
-// console.log(taro.age);
