@@ -1,16 +1,16 @@
 export {};
 
 class Me {
-  static isProgramer: boolean = true;
+  // インスタンス作成時にいちいちnew を使わなくていい
+  static isProgrammer: boolean = true;
   static firstName: string = "Ryuji";
   static lastName: string = "Ueda";
 
   static work() {
-    return `Hey, guys! This is ${this.firstName}! Are you interested in TypeScript? Let's dive into TypeScript!`
+    return `${this.firstName}ちゃんとTS勉強してるか〜？？`;
   }
 }
 
-// let me = new Me();
-// console.log(me.isProgramer);
-console.log(Me.isProgramer); //静的メンバにすることでインスタンスをつ作らずにアクセスできる
+let me = new Me();
+console.log(Me.isProgrammer);
 console.log(Me.work());
